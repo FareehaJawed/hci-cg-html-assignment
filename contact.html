@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Norman - Contact</title>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post" style="background-color: gainsboro;">
+
+            <!-- Groups related form controls and provides context -->
+            <fieldset>
+                <legend>Send a Message</legend>
+
+                <!-- Label explicitly associated with its input -->
+                <label for="subject">Subject</label><br>
+                <input type="text" id="subject" name="subject"><br><br>
+
+                <!-- Textarea with clear label for screen readers -->
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+                <!-- Submit button is keyboard accessible by default -->
+                <button type="submit">Send</button>
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer>
+        <p><a href="index.html" style="background-color: gainsboro;">Back to Home</a></p>
+    </footer>
+</body>
+
+</html>

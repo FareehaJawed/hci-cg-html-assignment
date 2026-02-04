@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 01 Solution</title>
+
+    <style>
+        .header3 {
+            background-color: darkgray;
+        }
+
+        .answers {
+            background-color: rgb(234, 204, 162);
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lab 01 Solution</h1>
+    </header>
+
+    <main>
+        <h2 style="color: darkblue;">Week 01–Week 04 discussion</h2>
+
+        <h3 class="header3">Cogitive Process Chain</h3>
+        <p class="answers">The Cognitive Process chain grabbed my attention from the last class. It shows how human
+            mental state goes through series of Process to finally make a desicion. And the class activity in which we
+            checked all the necessary steps for problem solving was interesting and it boosted our cognitive thinking
+            capability.
+            <br> <br>
+            Moreover, this Process chain highlights all the important Processes a human brain goes through to actually
+            perform any task. For instance, when humans fail to learn or think about something, it is often because they
+            did not pay attention or failed to form a perception of it.
+        </p>
+        <p style="background-color: rgb(203, 150, 18);">Reference: Week_1_HCI_CG.pdf, page number 28. Topic: Cognitive
+            Processes</p>
+
+        <h3 class="header3">Automatic Syringe</h3>
+        <p class="answers">The Automatic Syringe example demonstrate how important is designing and as humans can make
+            mistake so the effect of one accidental key slip can lead to out of factor dose in the older numeric keypad.
+            Therefore it says that every user should be involved in designing process of any equipments or
+            machinery.<br><br>After consulting users, it solves the problem by making individual increment/decrement
+            buttons for each digit. This reduces chances of accidental keypress as we can set each digit separately.
+            This shows that how a simple user interface is clear, effective and easy to use.</p>
+        <p style="background-color: rgb(203, 150, 18);">Reference: HCI Book by Alan Dix. Topic: Design Focus, page
+            number 7-8.</p>
+
+        <h3 class="header3">Who Paid Problem</h3>
+        <p class="answers">The Who Paid Problem highlights about a social coordination system where design choices have
+            direct emotional impacts on friendships. It solves the problem that evey person in friends group feels shy
+            and cheap to discuss about the bill when they go for dinner or buy something from stores or spend on trip.
+            It does not feel good to ask about cost per person and distribute money. And it feels frustating when
+            friends forget to pay for their bill. <br><br>So this shows how an interactively designed app can solve this
+            issue that ensures financial accuracy and can manage splitting bill among friends within short time with
+            minimizing the social awkwardness for asking friends for money. </p>
+        <p style="background-color: rgb(203, 150, 18);">Reference: Week03_HCI_QUIZ_WORKSHEET.pdf, page number 5.</p>
+
+        <h2 style="color: darkblue;">Lab Exam Practice</h2>
+
+
+        <section>
+            <h3 class="header3">Part A</h3>
+            <table border="1">
+                <caption>Sample exam questions: fix common HTML structure and accessibility mistakes</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">UI Element / Issue</th>
+                        <th scope="col">Wrong HTML (with mistake)</th>
+                        <th scope="col">Correct UI Element</th>
+                        <th scope="col">Correct HTML</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                    <tr>
+                        <th scope="row">Button created using <code>div</code> instead of semantic element</th>
+                        <td>
+                            <pre><code>&lt;div onclick="submitForm()"&gt;Submit&lt;/div&gt;</code></pre>
+                        </td>
+                        <td>Use semantic button element</td>
+                        <td>
+                            <pre><code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Form input missing associated label</th>
+                        <td>
+                            <pre><code>&lt;input type="text" id="email"&gt;</code></pre>
+                        </td>
+                        <td>Input properly labeled for accessibility</td>
+                        <td>
+                            <pre><code>&lt;label for="email"&gt;Email&lt;/label&gt;
+&lt;input type="text" id="email"&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Heading hierarchy is incorrect (skips a level)</th>
+                        <td>
+                            <pre><code>&lt;h1&gt;Interaction Analysis&lt;/h1&gt;
+&lt;h3&gt;Norman vs GOMS&lt;/h3&gt;</code></pre>
+                        </td>
+                        <td>Headings follow proper hierarchy (no skipping levels)</td>
+                        <td>
+                            <pre><code>&lt;h1&gt;Interaction Analysis&lt;/h1&gt;
+&lt;h2&gt;Norman vs GOMS&lt;/h2&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Comparison table missing <code>caption</code> and header cells (<code>th</code>)
+                        </th>
+                        <td>
+                            <pre><code>&lt;table&gt;
+  &lt;tr&gt;&lt;td&gt;Model&lt;/td&gt;&lt;td&gt;Predicts&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;KLM&lt;/td&gt;&lt;td&gt;Time&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                        </td>
+                        <td>Accessible table with caption + headers + scope</td>
+                        <td>
+                            <pre><code>&lt;table&gt;
+  &lt;caption&gt;Models and what they predict&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Model&lt;/th&gt;
+      &lt;th scope="col"&gt;Predicts&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;KLM&lt;/th&gt;
+      &lt;td&gt;Execution time&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><code>aria-current</code> used incorrectly (more than one “current page”)</th>
+                        <td>
+                            <pre><code>&lt;nav aria-label="Primary navigation"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="index.html" aria-current="page"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="cv.html" aria-current="page"&gt;CV&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                        </td>
+                        <td>Only the active page link is marked as current</td>
+                        <td>
+                            <pre><code>&lt;nav aria-label="Primary navigation"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="cv.html" aria-current="page"&gt;CV&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Image missing alternative text (<code>alt</code>)</th>
+                        <td>
+                            <pre><code>&lt;img src="wifi.png"&gt;</code></pre>
+                        </td>
+                        <td>Image with meaningful alternative text</td>
+                        <td>
+                            <pre><code>&lt;img src="wifi.png" alt="Wi-Fi enabled icon"&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Link text is not descriptive</th>
+                        <td>
+                            <pre><code>&lt;a href="report.html"&gt;Click here&lt;/a&gt;</code></pre>
+                        </td>
+                        <td>Link text describes destination</td>
+                        <td>
+                            <pre><code>&lt;a href="report.html"&gt;View usability report&lt;/a&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Table header cells use <code>td</code> instead of <code>th</code></th>
+                        <td>
+                            <pre><code>&lt;tr&gt;
+  &lt;td&gt;Model&lt;/td&gt;
+  &lt;td&gt;Purpose&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+                        </td>
+                        <td>Use table headers with scope</td>
+                        <td>
+                            <pre><code>&lt;tr&gt;
+  &lt;th scope="col"&gt;Model&lt;/th&gt;
+  &lt;th scope="col"&gt;Purpose&lt;/th&gt;
+&lt;/tr&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Missing language attribute on <code>html</code> element</th>
+                        <td>
+                            <pre><code>&lt;html&gt;</code></pre>
+                        </td>
+                        <td>Declare document language</td>
+                        <td>
+                            <pre><code>&lt;html lang="en"&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Using <code>b</code> instead of semantic emphasis</th>
+                        <td>
+                            <pre><code>&lt;b&gt;Important&lt;/b&gt;</code></pre>
+                        </td>
+                        <td>Use semantic emphasis</td>
+                        <td>
+                            <pre><code>&lt;strong&gt;Important&lt;/strong&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Navigation missing accessible label</th>
+                        <td>
+                            <pre><code>&lt;nav&gt;
+  &lt;ul&gt;...&lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                        </td>
+                        <td>Navigation landmark labeled for screen readers</td>
+                        <td>
+                            <pre><code>&lt;nav aria-label="Primary navigation"&gt;
+  &lt;ul&gt;...&lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="header3">Part B</h3>
+            <ul>
+                <li><strong>T/F:</strong> Every link inside <code>&lt;ul&gt;</code> must be placed inside an
+                    <code>&lt;li&gt;</code>.
+                </li>
+                <p class="answers">✅ True</p>
+
+                <li><strong>T/F:</strong> A page may have multiple <code>&lt;h1&gt;</code> headings to make text larger.
+                </li>
+                <p class="answers">❌ False</p>
+
+                <li><strong>T/F:</strong> <code>aria-current="page"</code> should be used on the active navigation item.
+                </li>
+                <p class="answers">✅ True – This tells screen readers which link represents the current page.</p>
+
+                <li><strong>T/F:</strong> A form is accessible even if it has no <code>&lt;label&gt;</code> elements.
+                </li>
+                <p class="answers">❌ False</p>
+
+                <li><strong>T/F:</strong> KLM predicts execution time for expert, error-free performance.</li>
+                <p class="answers">✅ True – The Keystroke-Level Model (KLM) only predicts low-level task execution for
+                    skilled users,
+                    ignoring thinking or errors.</p>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="header3">Part C</h3>
+            <ul>
+                <li>Explain the difference between a semantic element (e.g., <code>nav</code>) and a generic element
+                    (e.g., <code>div</code>).</li>
+
+                <p class="answers"">
+                    <strong>Semantic element:</strong> Has <strong>meaning and purpose</strong> built into HTML.
+                    Example: <code>&lt;nav&gt;</code> (navigation), <code>&lt;header&gt;</code>,
+                    <code>&lt;article&gt;</code>. It helps browsers, search engines, and screen readers understand the
+                    content.
+                    <br>
+                    <strong>Generic element:</strong> Has <strong>no inherent meaning</strong>, used only for structure
+                    or styling. Example: <code>&lt;div&gt;</code>. You have to rely on classes, IDs, or CSS for meaning.
+                </p>
+
+                <li>Why does KLM not model high-level planning and interpretation?</li>
+                <ul  class=" answers">
+                    <li>
+                        KLM (Keystroke-Level Model) focuses on <strong>low-level, observable actions</strong>:
+                        keystrokes, clicks, mouse movements, mental operators (<code>[M]</code>), etc.
+                    </li>
+                    <li>
+                        It assumes the <strong>user is an expert</strong> and knows <strong>what to do</strong>, so
+                        <strong>decision-making, planning, and interpreting the task</strong> are
+                        <strong>ignored</strong>.
+                    </li>
+                    <li>
+                        Purpose: to <strong>predict task execution time</strong> for <strong>skilled, error-free
+                            users</strong>.
+                    </li>
+            </ul>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html" style="background-color: gainsboro;">Back to Home</a></p>
+    </footer>
+</body>
+
+</html>
